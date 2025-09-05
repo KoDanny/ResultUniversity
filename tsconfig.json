@@ -2,7 +2,7 @@
 	// Visit https://aka.ms/tsconfig to read more about this file
 	"compilerOptions": {
 		"outDir": "./build",
-		"module": "NodeNext",
+		"module": "es2022",
 		"target": "esnext",
 		"types": [],
 		"sourceMap": true,
@@ -12,6 +12,7 @@
 		"exactOptionalPropertyTypes": true,
 		"strict": true,
 		"jsx": "react-jsx",
+		"moduleResolution": "bundler",
 		"verbatimModuleSyntax": true,
 		"isolatedModules": true,
 		"noUncheckedSideEffectImports": true,
