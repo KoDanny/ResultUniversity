@@ -1,3 +1,7 @@
+import { useToggle } from './hooks';
+
 export function App() {
-	return <div>My App</div>;
+	const [value, toggle] = useToggle(['blue', 'orange', 'cyan', 'teal']);
+
+	return <button onClick={() => toggle()}>{String(value)}</button>;
 }
