@@ -1,0 +1,106 @@
+.field-container {
+	position: relative;
+	margin-bottom: 2rem;
+
+	&:has(.error) input {
+		border-color: brown;
+		outline: none;
+	}
+
+	.label {
+		font-weight: bold;
+		.asterisk {
+			color: brown;
+			font-size: 1.2em;
+			margin-left: 5px;
+		}
+	}
+}
+
+.field {
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	input {
+		font-size: inherit;
+		border: 2px solid #333;
+		padding: 0.5em;
+	}
+
+	.icon {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		margin: 0 0.4em;
+	}
+
+	&:has(.icon) input {
+		padding-left: 1.4em;
+	}
+}
+
+.field-container:has(input[type='radio']) {
+	margin-bottom: 0.4rem;
+	display: flex;
+	align-items: center;
+	padding: 0.5em;
+
+	label {
+		order: 2;
+	}
+
+	input {
+		margin: 0 0.4em;
+		order: 1;
+	}
+}
+
+.error {
+	color: brown;
+	font-size: 0.8em;
+	position: absolute;
+	bottom: -1.1em;
+}
+
+.xs {
+	font-size: smaller;
+}
+
+.sm {
+	font-size: small;
+}
+
+.md {
+	font-size: medium;
+}
+
+.lg {
+	font-size: large;
+}
+
+.xl {
+	font-size: x-large;
+}
+
+//
+
+.radius-xs {
+	border-radius: 0;
+}
+
+.radius-sm {
+	border-radius: 5px;
+}
+
+.radius-md {
+	border-radius: 15px;
+}
+
+.radius-lg {
+	border-radius: 25px;
+}
+
+.radius-xl {
+	border-radius: 50px;
+}

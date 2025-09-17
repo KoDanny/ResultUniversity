@@ -1,0 +1,31 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: cornsilk;
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	h2 {
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	button {
+		display: block;
+		margin: auto;
+		padding: 10px 15px;
+		border: nones;
+	}
+}
+
+.app-container {
+	width: 30%;
+	height: 30%;
+	margin: auto;
+}
