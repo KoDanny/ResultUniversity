@@ -13,6 +13,7 @@ module.exports = {
 		port: 4000,
 		hot: true,
 		open: true,
+		historyApiFallback: true,
 	},
 
 	entry: getPath('src/index.tsx'),
@@ -20,6 +21,7 @@ module.exports = {
 		filename: 'index.js',
 		path: getPath('build'),
 		clean: true,
+		publicPath: '/',
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
@@ -37,6 +39,10 @@ module.exports = {
 				test: /\.[tj]sx?$/,
 				use: 'ts-loader',
 				exclude: /node_modules/,
+			},
+			{
+				test: /\.s[ac]ss?$/,
+				use: ['style-loader', 'css-loader', 'sass-loader'],
 			},
 		],
 	},
