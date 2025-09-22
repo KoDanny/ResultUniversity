@@ -1,0 +1,23 @@
+.category-container {
+	background-color: #333;
+}
+
+.link {
+	display: block;
+	background-color: #f1f1f1;
+	padding: 5px;
+	color: #333;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+:last-child {
+	margin-bottom: 0;
+}
+
+.link:hover {
+	background-color: #333;
+	color: lightgreen;
+	outline: 1px solid lightgreen;
+	outline-offset: 1px;
+}

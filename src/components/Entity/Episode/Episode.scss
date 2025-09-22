@@ -1,0 +1,23 @@
+.episode-container {
+	background-color: #333;
+	color: #f1f1f1;
+	font-size: 16px;
+
+	* {
+		text-align: center;
+	}
+
+	.episode-property {
+		font-weight: bold;
+		font-size: 20px;
+		display: block;
+		padding: 5px;
+	}
+	.episode-property-container {
+		margin: 5px 0 10px;
+	}
+}
+
+.episode-header {
+	text-align: center;
+}
