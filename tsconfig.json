@@ -17,7 +17,17 @@
 		"isolatedModules": true,
 		"noUncheckedSideEffectImports": true,
 		"moduleDetection": "force",
-		"skipLibCheck": true
+		"skipLibCheck": true,
+		"baseUrl": ".",
+		"paths": {
+			"@@data/*": ["src/data/*"],
+			"@@types/*": ["src/types/*"],
+			"@@components": ["src/components"],
+			"@@constants": ["src/constants"],
+			"@@hooks": ["src/hooks"],
+			"@@utils": ["src/utils"],
+			"@@pages": ["src/pages"]
+		}
 	},
 	"include": ["src/**/*"]
 }
