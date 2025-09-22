@@ -1,0 +1,22 @@
+.nav-buttons-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.nav-btn {
+		display: block;
+		width: 20%;
+		padding: 15px 20px;
+		margin: 0 10px;
+		border: none;
+		background-color: #333;
+		color: #f1f1f1;
+		font-weight: 500;
+		font-size: 16px;
+	}
+
+	.nav-btn:hover {
+		color: lightgreen;
+		outline: 2px solid lightgreen;
+	}
+}
