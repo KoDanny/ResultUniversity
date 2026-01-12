@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Элемент списка задач Задача выполнена(done): false 1`] = `
+<DocumentFragment>
+  <li
+    class="item-wrapper"
+  >
+    <input
+      id="test"
+      type="checkbox"
+    />
+    <label
+      for="test"
+    >
+      заголовок
+    </label>
+    <button
+      class="button button-with-icon"
+      data-alt="Удалить"
+      disabled=""
+    >
+      <img
+        alt="Удалить"
+        src="[object Object]"
+      />
+    </button>
+  </li>
+</DocumentFragment>
+`;
+
+exports[`Элемент списка задач Задача выполнена(done): true 1`] = `
+<DocumentFragment>
+  <li
+    class="item-wrapper"
+  >
+    <input
+      checked=""
+      id="test"
+      type="checkbox"
+    />
+    <label
+      for="test"
+    >
+      <s>
+        заголовок
+      </s>
+    </label>
+    <button
+      class="button button-with-icon"
+      data-alt="Удалить"
+    >
+      <img
+        alt="Удалить"
+        src="[object Object]"
+      />
+    </button>
+  </li>
+</DocumentFragment>
+`;
